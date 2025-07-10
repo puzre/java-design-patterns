@@ -1,4 +1,4 @@
-package org.puzre.creational.builder;
+package org.puzre.creational.builder.v1;
 
 public class Plant {
 
@@ -6,6 +6,10 @@ public class Plant {
     private final int fruits;
     private final int nodes;
     private final String color;
+
+    public String getColor() {
+        return this.color;
+    }
 
     public Plant(Builder builder) {
         this.leafs = builder.leafs;
