@@ -22,11 +22,10 @@ public class House {
 
     @Override
     public String toString() {
-        return "House {" +
-                "doors=" + doors +
-                ", windows=" + windows +
-                ", color='" + color + '\'' +
-                '}';
+        return "🏠 House\n" +
+                "Doors: " + doors + "\n" +
+                "Windows: " + windows + "\n" +
+                "Color: " + (color != null ? color : "Unknown");
     }
 
     public static class Builder {

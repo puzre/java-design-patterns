@@ -24,12 +24,11 @@ public class Plant {
 
     @Override
     public String toString() {
-        return "Plant {" +
-                "leafs=" + leafs +
-                ", fruits=" + fruits +
-                ", nodes=" + nodes +
-                ", color='" + color + '\'' +
-                '}';
+        return "🪴 Plan\n" +
+                "Leafs: " + leafs + "\n" +
+                "Fruits: " + fruits + "\n" +
+                "Nodes: " + nodes + "\n" +
+                "Color: " + (color != null ? color : "Unknown");
     }
 
     public static class Builder {

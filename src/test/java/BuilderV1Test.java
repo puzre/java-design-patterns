@@ -18,6 +18,8 @@ public class BuilderV1Test {
                 .nodes(2)
                 .build();
 
+        System.out.println(plant.toString());
+
         String expectedColor = "Green";
         String actualColor = plant.getColor();
 
@@ -34,6 +36,8 @@ public class BuilderV1Test {
                 .doors(2)
                 .windows(4)
                 .build();
+
+        System.out.println(house.toString());
 
         String expectedColor = "Blue";
         String actualColor = house.getColor();
